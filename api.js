@@ -32,7 +32,7 @@ function start() {
                 rnd = Math.floor(Math.random() * tok.length);
                 cuk = tok[rnd];
 
-                $("#result").append("https://l.instagram.com/?u=" + uh + "&e=" + cuk + "\n" + "&s=1"), $(".alert").removeClass("alert-info alert-warning").addClass("alert-success").text("Done!"), btn.button("reset")
+                $("#result").append("https://l.instagram.com/?u=" + uh + "&e=" + cuk + "\n"+"&s=1"), $(".alert").removeClass("alert-info alert-warning").addClass("alert-success").text("Done!"), btn.button("reset")
             }).fail(function(data) {
                 $("#result").append(data.link + "\n"), $(".alert").removeClass("alert-info alert-warning").addClass("alert-success").text("Done!"), btn.button("reset")
             });
